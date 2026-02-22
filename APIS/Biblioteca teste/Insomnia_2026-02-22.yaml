@@ -1,0 +1,457 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: My first collection
+meta:
+  id: wrk_211cf289dff84f03bf02febaf39788f8
+  created: 1771768010191
+  modified: 1771768010191
+  description: ""
+collection:
+  - name: Biblioteca teste
+    meta:
+      id: fld_253fef7b90a84fb583e3ecf40c916583
+      created: 1771768319854
+      modified: 1771768319854
+      sortKey: -1771768319854
+      description: ""
+    children:
+      - name: Empréstimos
+        meta:
+          id: fld_2333392f139249e4b9d7550ac1968fce
+          created: 1771768350464
+          modified: 1771768350464
+          sortKey: -1771768350464
+          description: ""
+        children:
+          - url: http://localhost:3000/emprestimos/excluir/4
+            name: Deletar
+            meta:
+              id: req_481a3d45dcfd4e5f9d673a8f29cf25e9
+              created: 1771768328322
+              modified: 1771770562278
+              isPrivate: false
+              description: ""
+              sortKey: -1771768354994
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/emprestimos/listar
+            name: Listar
+            meta:
+              id: req_9612dbf06b964652b5163aeb4ba6160a
+              created: 1771768330172
+              modified: 1771769492130
+              isPrivate: false
+              description: ""
+              sortKey: -1771768355144
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/emprestimos/atualizar/3
+            name: Atualizar
+            meta:
+              id: req_2644d24f43c34b6391f2d4abca4e1fbb
+              created: 1771768331630
+              modified: 1771770538721
+              isPrivate: false
+              description: ""
+              sortKey: -1771768355044
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"data_emprestimo": "2026-02-13",
+                	"data_devolucao": "2026-02-23"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/emprestimos/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_26614dd8572d4731b78dd802b4be5db3
+              created: 1771768335072
+              modified: 1771770316152
+              isPrivate: false
+              description: ""
+              sortKey: -1771768355094
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"aluno_id": 3,
+                	"livro_id": 3,
+                	"data_emprestimo": "2026-02-12",
+                	"data_devolucao": "2026-02-21"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/emprestimos/buscar/1
+            name: Buscar
+            meta:
+              id: req_598f10283a9049b4b5ddcdb912419c16
+              created: 1771768389035
+              modified: 1771770568841
+              isPrivate: false
+              description: ""
+              sortKey: -1771768389035
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Alunos
+        meta:
+          id: fld_60d7464415ca4dcaa56d92287695e986
+          created: 1771768444715
+          modified: 1771768468769
+          sortKey: -1771768335159
+          description: ""
+        children:
+          - url: http://localhost:3000/alunos/excluir/4
+            name: Deletar
+            meta:
+              id: req_4b04f897f242402bb65a8b8e3bea6458
+              created: 1771768444717
+              modified: 1771770028598
+              isPrivate: false
+              description: ""
+              sortKey: -1771768354994
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/alunos/listar
+            name: Listar
+            meta:
+              id: req_044a220da9534e3b8464aece033fea45
+              created: 1771768444719
+              modified: 1771769014011
+              isPrivate: false
+              description: ""
+              sortKey: -1771768355144
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/alunos/atualizar/2
+            name: Atualizar
+            meta:
+              id: req_b2a8f392610d49f2a128257908fbfaad
+              created: 1771768444720
+              modified: 1771770049681
+              isPrivate: false
+              description: ""
+              sortKey: -1771768355044
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"turma": "Turma 3"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/alunos/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_fc61f101f0df4c80b1c5ab56f5589a0b
+              created: 1771768444722
+              modified: 1771770016532
+              isPrivate: false
+              description: ""
+              sortKey: -1771768355094
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"nome": "Aluno 4",
+                	"turma": "Turma 1",
+                	"matricula": 839393
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/alunos/buscar/1
+            name: Buscar
+            meta:
+              id: req_05489d0d9b344a79b7feb5155cc00bd8
+              created: 1771768444723
+              modified: 1771770064199
+              isPrivate: false
+              description: ""
+              sortKey: -1771768389035
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+      - name: Livros
+        meta:
+          id: fld_86d1000d7e3447f088a00397ba5bfdb2
+          created: 1771768447401
+          modified: 1771768456318
+          sortKey: -1771768342811.5
+          description: ""
+        children:
+          - url: http://localhost:3000/livros/excluir/4
+            name: Deletar
+            meta:
+              id: req_2f8a3b9fbeb34461b0c1dc294772587c
+              created: 1771768447402
+              modified: 1771770227868
+              isPrivate: false
+              description: ""
+              sortKey: -1771768354994
+            method: DELETE
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/livros/listar
+            name: Listar
+            meta:
+              id: req_a0866ecb7e994ca1bf2e12dc3eb014e1
+              created: 1771768447403
+              modified: 1771768961886
+              isPrivate: false
+              description: ""
+              sortKey: -1771768355144
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/livros/atualizar/2
+            name: Atualizar
+            meta:
+              id: req_f5b65d680e244558aa99591ff3257ed8
+              created: 1771768447405
+              modified: 1771770145808
+              isPrivate: false
+              description: ""
+              sortKey: -1771768355044
+            method: PUT
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"titulo": "Livro 2"
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/livros/cadastrar
+            name: Cadastrar
+            meta:
+              id: req_9e47a0c96d144e1e9d2767bb7b6d8fce
+              created: 1771768447407
+              modified: 1771770214852
+              isPrivate: false
+              description: ""
+              sortKey: -1771768355094
+            method: POST
+            body:
+              mimeType: application/json
+              text: |-
+                {
+                	"titulo": "Livro 4",
+                	"autor": "Autor 4",
+                	"isbn": "252273896372",
+                	"quantidade": 10,
+                	"disponiveis": 5
+                }
+            headers:
+              - name: Content-Type
+                value: application/json
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+          - url: http://localhost:3000/livros/buscar/2
+            name: Buscar
+            meta:
+              id: req_1d06c169803b4018bd79c5bd0247f319
+              created: 1771768447408
+              modified: 1771770233643
+              isPrivate: false
+              description: ""
+              sortKey: -1771768389035
+            method: GET
+            headers:
+              - name: User-Agent
+                value: insomnia/12.3.1
+                description: ""
+                disabled: false
+            settings:
+              renderRequestBody: true
+              encodeUrl: true
+              followRedirects: global
+              cookies:
+                send: true
+                store: true
+              rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_3060888d8c2f5ef62894ede1ae2d79869d7a2796
+    created: 1771768010195
+    modified: 1771768010195
+environments:
+  name: Base Environment
+  meta:
+    id: env_3060888d8c2f5ef62894ede1ae2d79869d7a2796
+    created: 1771768010193
+    modified: 1771768010193
+    isPrivate: false
